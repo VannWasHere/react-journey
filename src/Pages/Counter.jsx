@@ -20,11 +20,11 @@ const Counter = () => {
     }
     return (
         <>
-            <p id='counter' className='mt-2 mb-3 text-center'>{getCounter}</p>
-            <div className="flex justify-center">
+            <p id='counter' className='mt-10 text-center text-5xl'>{getCounter}</p>
+            <div className="flex justify-center p-2">
                 {listButton.map((item, index) => (
                     <button key={index} 
-                    className='outline ml-6 bg-zinc-600 text-white p-2 rounded-lg' 
+                    className='outline bg-zinc-600 m-3 text-white p-2 rounded-lg w-3/4 h-40 transition-all hover:bg-zinc-400' 
                     onClick={() => (index == 0 ? addCounterValue() : index == 1 ? resetCounter() : minCounterValue() )}>{item}</button>
                 ))}
             </div>

@@ -9,12 +9,14 @@ const App = () => {
     return(
         <>
         <Router>
-            <NavigationBar />
-            <Routes>
-                <Route path='/' element={<Home />}/>
-                <Route path='/counter' element={<Counter />}/>
-                <Route path='/profile' element={<Profile />}/>
-            </Routes>
+            <NavigationBar name={"Justine Donovan"}/>
+            <main className='p-6'>
+                <Routes>
+                    <Route path='/' element={<Home />}/>
+                    <Route path='/counter' element={<Counter />}/>
+                    <Route path='/profile' element={<Profile />}/>
+                </Routes>
+            </main>
         </Router>
         </>
     );
