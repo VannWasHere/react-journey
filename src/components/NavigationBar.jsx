@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 const menuItems = ['Home', 'Pages', 'About'];
 
 const NavigationBar = (props) => {
-    console.log(props);
     return (
         <header>
             <nav className="flex justify-between bg-slate-600 w-full p-12 text-white">
