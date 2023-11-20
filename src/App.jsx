@@ -1,14 +1,14 @@
 import './css/index.css'
-import Introduction from './components/Introductions'
-import Welcome from './components/Welcome';
+import NavigationBar from './components/NavigationBar';
 
 const App = () => {
   return (
-    <div className="p-10">
-      <Welcome />
-      <Introduction/>
-      <Introduction name={"Justine"}/>
-    </div>
+    <>
+      <NavigationBar />
+      <main>
+        
+      </main>
+    </>
   );
 }
 
