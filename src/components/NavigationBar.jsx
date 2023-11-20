@@ -1,20 +1,20 @@
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const menuItems = ['Home', 'Counter', 'About'];
+const menuItems = ['Home', 'Counter', 'Profile'];
 
 const NavigationBar = (props) => {
     const navigate = useNavigate();
     return (
         <header>
             <nav className="flex justify-between bg-slate-600 w-full p-12 text-white">
-                <h1 className="text-3xl font-bold tracking-wider uppercase">{!props.navTitle ? "My Javascript Journey" : props.navTitle}</h1>
+                <h1 className="text-3xl font-bold tracking-wider uppercase">My React Journey</h1>
                 <div>
                     <ul className="flex space-x-4 w-full text-lg font-bold">
                     {/* Making list with array map function */}
                     {menuItems.map((item, index) => (
                         <button key={index} className="transition duration-300 cursor-pointer hover:text-blue-600 tracking-wider" 
-                        onClick={() => (index == 0 ? navigate('/') : (index == 1 ? navigate('counter') : navigate('/about')) )}>
+                        onClick={() => (index == 0 ? navigate('/') : (index == 1 ? navigate('counter') : navigate('/profile')) )}>
                             {item}
                         </button>
                     ))}
@@ -35,7 +35,7 @@ NavigationBar.propTypes = {
 
 NavigationBar.defaultProps = {
     name: "Anonymous",
-    navTitle: "My Javascript Journey"
+    navTitle: "My React Journey"
 }
 
 export default NavigationBar;

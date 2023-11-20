@@ -3,11 +3,13 @@ import './css/index.css'
 import Home from './Pages/Home';
 import Counter from './Pages/Counter';
 import Profile from './Pages/Profile';
+import NavigationBar from './components/NavigationBar';
 
 const App = () => {
     return(
         <>
         <Router>
+            <NavigationBar />
             <Routes>
                 <Route path='/' element={<Home />}/>
                 <Route path='/counter' element={<Counter />}/>

@@ -1,7 +1,7 @@
-import NavigationBar from "../components/NavigationBar"
-
 const Profile = () => {
-    return <NavigationBar />
+    return (
+        <h1>This is Profile</h1>
+    );
 }
 
 export default Profile;
