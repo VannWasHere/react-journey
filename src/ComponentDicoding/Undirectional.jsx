@@ -19,7 +19,7 @@ const Undirectional = () => {
     }
     
     return (
-        <div className="w-2/5 mt-5 p-10 border">
+        <div className="w-full mt-5 p-10 border">
             <h2 className="font-bold">Undirectional Data Flow</h2>
             <hr className="mt-5"/>
             <h2 className="font-bold text-center">Daftar Mahasiswa</h2>

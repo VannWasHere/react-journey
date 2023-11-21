@@ -28,7 +28,7 @@ const News = () => {
         }
     ];
     return (
-        <div className="mt-5">
+        <div className="w-full mt-5">
             <Header />
             <Card {...someNews[0]}/>
             <Card {...someNews[1]}/>
