@@ -1,6 +1,6 @@
 import Undirectional from "../componentDicoding/Undirectional";
 import News from '../componentDicoding/News'
-import ContactApplication from '../componentDicoding/ContactApplication'
+import AddContact from "../componentDicoding/AddContact";
 
 const Dicoding = () => {
 
@@ -12,7 +12,7 @@ const Dicoding = () => {
             <div className="flex space-x-36 justify-between">
                 <div className="flex w-full flex-col">
                     <Undirectional />
-                    <ContactApplication />
+                    <AddContact />
                 </div>
                 <News />
             </div>
