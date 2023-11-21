@@ -1,5 +1,5 @@
 const getData = () => {
-    return [
+  return [
       {
         id: 1,
         name: 'Justine Donovan',
@@ -17,8 +17,8 @@ const getData = () => {
         name: 'Windah Ilham',
         tag: 'Wilham',
         imageUrl: 'https://cdn-image.hipwee.com/wp-content/uploads/2022/01/hipwee-win1.jpg',
-      },
-    ];
-   }
-    
-   export { getData };
+    },
+  ];
+}
+
+export { getData };

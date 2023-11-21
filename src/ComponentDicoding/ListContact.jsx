@@ -7,11 +7,11 @@ const ListContact = ({contact}) => {
             {contact.map((item, key) => (
                 <li key={key} className="flex p-3 items-center border border-dashed border-slate-700 rounded-3xl mt-3">
                 <div>
-                    <img className="rounded-full w-14 mr-2" src={item.imageUrl} alt="" />
+                    <img className="rounded-full w-14 mr-2" src={item.imageUrl} alt={item.name} />
                 </div>
                 <div className="border-l m-3 pl-5">
-                    <p>{item.name}</p>
-                    <p className="mt-1">{item.tag}</p>
+                    <p className='tracking-widest'>{item.name}</p>
+                    <p className="mt-1 underline italic text-blue-500">@{item.tag}</p>
                 </div>
             </li>
             ))}
