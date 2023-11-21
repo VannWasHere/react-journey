@@ -2,21 +2,21 @@ const getData = () => {
     return [
       {
         id: 1,
-        name: 'Dimas Saputra',
-        tag: 'dimasmds',
-        imageUrl: '/images/dimasmds.jpeg',
+        name: 'Justine Donovan',
+        tag: 'justine-donovan',
+        imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw6Z-JoENF8GvgmV_PrylSEdSElESx7dnfDA&usqp=CAU',
       },
       {
         id: 2,
-        name: 'Arif Faizin',
-        tag: 'arifaizin',
-        imageUrl: '/images/arifaizin.jpeg',
+        name: 'Marsella Patricia',
+        tag: 'mcimit',
+        imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq_Oii3YejHQNLoIA6f2wgJqmuI2skYHctsFVbmGY&s',
       },
       {
         id: 3,
-        name: 'Rahmat Fajri',
-        tag: 'rfajri27',
-        imageUrl: '/images/rfajri27.jpeg',
+        name: 'Windah Ilham',
+        tag: 'Wilham',
+        imageUrl: 'https://cdn-image.hipwee.com/wp-content/uploads/2022/01/hipwee-win1.jpg',
       },
     ];
    }
