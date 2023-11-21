@@ -1,11 +1,12 @@
-import Button from '../components/Button'
+import ContactForm from './ContactForm'
+import ListContact from './ContactContainer';
 
 const AddContact = () => {
     return (
-        <div className="mt-7 p-2">
+        <div className="mt-7 border p-4">
             <h1 className="text-3xl font-bold tracking-wider">Contact Appliaction</h1>
-            <h1>Test</h1>
-            <Button buttonText={"Add Person"}/>
+            <ContactForm />
+            <ListContact />
         </div>
     );
 }
