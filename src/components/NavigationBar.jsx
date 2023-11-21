@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const menuItems = ['Home', 'Counter', 'Profile'];
+const menuItems = ['Home', 'Counter', 'Profile', 'Dicoding'];
 
 const NavigationBar = (props) => {
     const navigate = useNavigate();
@@ -14,7 +14,7 @@ const NavigationBar = (props) => {
                     {/* Making list with array map function */}
                     {menuItems.map((item, index) => (
                         <button key={index} className="transition duration-300 cursor-pointer hover:text-blue-600 tracking-wider" 
-                        onClick={() => (index == 0 ? navigate('/') : (index == 1 ? navigate('counter') : navigate('/profile')) )}>
+                        onClick={() => (index == 0 ? navigate('/') : (index == 1 ? navigate('counter') : (index == 2 ? navigate('/profile') : navigate('/dicoding'))) )}>
                             {item}
                         </button>
                     ))}

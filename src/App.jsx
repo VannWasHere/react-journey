@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import Counter from './Pages/Counter';
 import Profile from './Pages/Profile';
 import NavigationBar from './components/NavigationBar';
+import Dicoding from './Pages/Dicoding';
 
 const App = () => {
     return(
@@ -15,6 +16,7 @@ const App = () => {
                     <Route path='/' element={<Home />}/>
                     <Route path='/counter' element={<Counter />}/>
                     <Route path='/profile' element={<Profile />}/>
+                    <Route path='/dicoding' element={<Dicoding />}/>
                 </Routes>
             </main>
         </Router>
