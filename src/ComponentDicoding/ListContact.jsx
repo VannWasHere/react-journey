@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import DeleteButton from '../components/DeleteButton';
 
 const ListContact = ({contact}) => {
     return (
@@ -9,9 +10,12 @@ const ListContact = ({contact}) => {
                 <div>
                     <img className="rounded-full w-14 mr-2" src={item.imageUrl} alt={item.name} />
                 </div>
-                <div className="border-l m-3 pl-5">
-                    <p className='tracking-widest'>{item.name}</p>
-                    <p className="mt-1 underline italic text-blue-500">@{item.tag}</p>
+                <div className="border-l w-full m-3 pl-5 flex justify-between items-center">
+                    <div>
+                        <p className='tracking-widest'>{item.name}</p>
+                        <p className="mt-1 underline italic text-blue-500">@{item.tag}</p>
+                    </div>
+                    <DeleteButton />
                 </div>
             </li>
             ))}
