@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import DeleteButton from '../components/DeleteButton';
 
-const ListContact = ({contact}) => {
+const ListContact = ({contact, onDelete}) => {
     return (
         <div className="w-full">
         <h2 className="text-2xl font-bold">Daftar Kontak</h2>
@@ -15,7 +15,7 @@ const ListContact = ({contact}) => {
                         <p className='tracking-widest'>{item.name}</p>
                         <p className="mt-1 underline italic text-blue-500">@{item.tag}</p>
                     </div>
-                    <DeleteButton />
+                    <DeleteButton id={item.id} onDelete={onDelete}/>
                 </div>
             </li>
             ))}
