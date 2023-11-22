@@ -25,6 +25,7 @@ const ListContact = ({contact, onDelete}) => {
 
 ListContact.propTypes = {
     contact: PropTypes.array,
+    onDelete: PropTypes.any,
 }
 
 export default ListContact;
