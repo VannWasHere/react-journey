@@ -1,4 +1,4 @@
-import ListContact from './ListContact';
+import ListContact from "/ListContact";
 
 const ContactContainer = () => {
 

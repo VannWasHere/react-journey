@@ -31,7 +31,7 @@ const ListContact = ({contact}) => {
 }
 
 ListContact.propTypes = {
-    contact: PropTypes.array,
+    contact: PropTypes.array.isRequired,
     onDelete: PropTypes.any,
 }
 

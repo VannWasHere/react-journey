@@ -8,7 +8,7 @@ const Button = (props) => {
 
 Button.propTypes = {
     buttonText: PropTypes.string,
-    onClick: PropTypes.string,
+    onClick: PropTypes.func,
 }
 
 export default Button;
