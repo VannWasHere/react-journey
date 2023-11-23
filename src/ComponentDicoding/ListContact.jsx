@@ -1,11 +1,18 @@
 import PropTypes from 'prop-types'
 import DeleteButton from '../components/DeleteButton';
+import { useState } from 'react';
 
-const ListContact = ({contact, onDelete}) => {
+const ListContact = ({contact}) => {
+    const [getContact, setContact] = useState(contact)
+
+    const deletedButton = (id) => {
+        const filteredContact = getContact.filter(contact => contact.id !== id);
+        setContact(filteredContact);
+    }
     return (
         <div className="w-full">
         <h2 className="text-2xl font-bold">Daftar Kontak</h2>
-            {contact.map((item, key) => (
+            {getContact.map((item, key) => (
                 <li key={key} className="flex p-3 items-center border border-dashed border-slate-700 rounded-3xl mt-3">
                 <div>
                     <img className="rounded-full w-14 mr-2" src={item.imageUrl} alt={item.name} />
@@ -15,7 +22,7 @@ const ListContact = ({contact, onDelete}) => {
                         <p className='tracking-widest'>{item.name}</p>
                         <p className="mt-1 underline italic text-blue-500">@{item.tag}</p>
                     </div>
-                    <DeleteButton id={item.id} onDelete={onDelete}/>
+                    <DeleteButton onClick={() => deletedButton(item.id)}/>
                 </div>
             </li>
             ))}

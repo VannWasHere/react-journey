@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 
-const DeleteButton = ({id, onDelete}) => {
+const DeleteButton = (props) => {
     return(
-        <button className="bg-red-600 rounded-lg text-white p-2" onClick={onDelete}>Delete</button>
+        <button className="bg-red-600 rounded-lg text-white p-2" onClick={props.onClick}>Delete</button>
     );
 }
 
 DeleteButton.propTypes = {
-    id: PropTypes.number,
+    onClick: PropTypes.any,
 }
 
 export default DeleteButton;
